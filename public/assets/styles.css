@@ -153,6 +153,26 @@ body{
       /* for desktop and large devices (768 pixels & up) */
       width: 700px;
     }
+    .logo_area {
+      height: auto;
+      left: 0;
+      margin-left: 0;
+      position: relative;
+      top: 0;
+      width: 130px;
+  }
+  .content .logo_area img{
+      height: auto;
+      width: 100%;
+
+  }
+  .content {
+      top: 50%;
+  }
+
+  .content h1{
+      font-size: 40px;
+  }
 
   }
 
@@ -251,7 +271,53 @@ body{
       float: none;
       display: block;
     }
+    .logo_area {
+      height: auto;
+      left: 0;
+      margin-left: 0;
+      position: relative;
+      top: 0;
+      width: 130px;
+  }
+  .content .logo_area img{
+      height: auto;
+      width: 100%;
+
+  }
+  .content {
+      top: 50%;
   }
 
+  .content h1{
+      font-size: 40px;
+  }
+  }
+
+
+
+  @media only screen and (min-width: 457px) and (max-width: 600px) {
+    .logo_area {
+        height: auto;
+        left: 0;
+        margin-left: 0;
+        position: relative;
+        top: 0;
+        width: 130px;
+    }
+    .content .logo_area img{
+        height: auto;
+        width: 100%;
+
+    }
+    .content {
+        top: 50%;
+    }
+
+    .content h1{
+        font-size: 40px;
+    }
+
+
+}
 
 

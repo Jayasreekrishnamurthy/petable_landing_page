@@ -5,7 +5,7 @@
 }
 
 body{
-  background:#eee;
+  background:#23AED8;
   font-family:sans-serif;
 }
 
@@ -101,6 +101,9 @@ body{
 
   }
 
+  .content form .row {
+    width: 300px;
+  }
 
 }
 

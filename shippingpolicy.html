@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Petable</title>
+        <title>petable landing page</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -19,82 +19,39 @@
         </style>
     </head>
     <body>
+        <!-- {{-- <div class="bgimg"></div>
+        <div class="content">
+            <img class="logopart" src="logopetable.png" alt="">
+            <h2>We Are Launching Soon</h2>
+            <p>The finish line is almost in sight! Please subscribe to our mailing list if you would like to be notified when the website goes live!</p>
+            <form class="form_land" name="submit-to-google-sheet">
+                <input class="input_land" type="email" name="Email" placeholder="Email Address" required>
+                <button class="land_btn" type="submit">Enquire Now</button>
+            </form>
+            <span id="msg" class="msg_land"></span>
 
-          
-      <div class="banner-area">
-        <div class="content-area">
-           <div class="content">
-            <div class="logo_area">
-                <a class="logopart"><img class="logoimg" src="public/logopetable.png" alt=""></a>
-            </div>
+           </div> --}} -->
 
-              <h1>We Are Launching Soon</h1>
-
-              <p>The finish line is almost in sight! Please subscribe to our mailing list if you would like to be notified when the website goes live!</p>
-
-              <form name="submit-to-google-sheet">
-                <div class="row">
-                  <input
-                    type="email"
-                    name="Email"
-                    placeholder="Email Address"
-                    required
-                  />
+           <div class="banner-area">
+            <!-- {{-- <div class="content-area"> --}}
+               {{-- <div class="content"> --}} -->
+                <div class="logo_area">
+                   <h1 class="termsheading">Shipping Policy </h1>
                 </div>
-                <input type="submit" value="Enquire Now" />
-              </form>
-              <span id="msg" class="msg_land"></span>
-<!-- 
-              {{-- <button class="btn">Click Here</button> --}}
-              {{-- footer --}} -->
-              <div class="social-icon">
-                <ul>
-                    <li><a href="https://instagram.com/petable.in?igshid=YTQwZjQ0NmI0OA==" target="_blank"><img class="fa-brands" src="3333.png" alt=""></a></li>
-                    <li><a href="https://instagram.com/petable.in?igshid=YTQwZjQ0NmI0OA==" target="_blank"><img class="fa-brands" src="2222.png" alt=""> </a></li>
-                    <li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2FPetabledotin" target="_blank"> <img class="fa-brands" src="1111.png" alt=""></a></li>
-                </ul>
-              </div>
+               <p>We provide local delivery to all domestic locations. You can choose between Standard and Express shipping options at the checkout page. Shipping charges will be calculated based on the delivery area pin codes/zip codes at the time of checkout</p>
+               <h1 class="termsheading">Order Processing Times</h1>
+               <p>We offer standard shipping on all orders. Orders are processed within 5 to 7 business days, (barring Sunday and holidays). We will send you a tracking id on your registered email address as soon as your order is dispatched.</p>
+               <p>Include any other pertinent information towards the beginning, such as potential delays due to a high volume of orders or postal service problems that are outside of your control.</p>
+               <h1 class="termsheading">Tracking Information</h1>
+               <p>You will receive an email notification from us as soon as your order is shipped. The email notification will include your Order Number and Tracking Number. You can use either of these numbers to check the status of your order on our website, [https://petable.in/].</p>
+               <p>Please note, the tracking link may need 24 hours - 48 hours to become active.</p>
+               <p>If you have not received your order within X business days or are unable to track your order, please get in touch with us at [support@xyx.com].</p>
+               <h1 class="termsheading">Refunds, Returns, And Exchanges</h1>
+               <p>We offer 30 days returns to all products Except pet food and supplement bought from [https://petable.in/]. For a full refund items must be unused, untorn and in the original packaging. The only amount deducted from your purchase will be the shipping costs for returns. </p>
+               <p>If you have any further questions, please don't hesitate to contact us at [https://petable.in/]</p>
 
-              <div class="contact_deatils1">
-                  <p class="onboarding">For Onboarding and Collaboration</p>
-                <!-- {{-- <a class="teamsconditionpart" href="/teamscondition">Terms and Conditions</a> | <a class="privacypolicy"
-                href="/privacypoliy">Privacy Policy</a> | <a class="teamsconditionpart" href="/returnpolicy">Return Policy</a> | <a class="privacypolicy" href="/shippingpolicy">Shipping Policy</a> --}} -->
-              </div>
-
-            <!-- {{-- contact --}} -->
-            <div class="contact_deatils">
-                <a href="#"><i class="fa fa-fw fa-envelope"></i>anbu@petable.in</a>
-                <a href="#"><i class="fa fa-fw fa-phone"></i>9087770201</a>
-              </div>
-              <div class="contact_deatils1">
-              <a class="teamsconditionpart" href="./teamscondition.html">Terms and Conditions</a> | <a class="privacypolicy"
-              href="./privacypoliy.html">Privacy Policy</a> | <a class="teamsconditionpart" href="./returnpolicy.html">Return Policy</a> | <a class="privacypolicy" href="./shippingpolicy.html">Shipping Policy</a>
-              </div>
-
-
+               <!-- {{-- </div> --}}
+            {{-- </div> --}} -->
            </div>
-        </div>
-    </div>
-
-
-
-          <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbxuYCIQfj4zUk_XmRvp0iOmoc7TVOyNn21mz0N-q11AtcCJ4e9z9OMdI5c4fUSg65X5BQ/exec'
-            const form = document.forms['submit-to-google-sheet']
-            const msg = document.getElementById("msg")
-
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    msg.innerHTML ="Thank You For Send Your Mail"
-                    setTimeout(function(){
-                        msg.innerHTML =""
-                    },2000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-            })
-          </script>
     </body>
 </html>

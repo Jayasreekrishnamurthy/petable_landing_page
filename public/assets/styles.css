@@ -50,7 +50,7 @@ body{
 }
 
 .content h1{
-  margin-top: 130px;
+  margin-top: 115px;
   font-size:60px;
   color:#fff;
   font-weight: 600;
@@ -70,21 +70,25 @@ body{
 } */
 
 @media only screen and (min-width: 200px) and (max-width: 767px) {
+    /* .logopart .logoimg{
+        margin-top: 50px;
+    } */
   .content .logo_area {
       /* height: auto;
       left: 0;
       margin-left: 0;
       position: relative;
       width: 130px; */
-      margin-top: 70px;
+      margin-top: 50px;
+      margin-bottom: 20px;
   }
   .banner-area{
     height: 850px;
   }
- 
+
   /* .content .logo_area{
   margin-top: 50px;
-  
+
   } */
   .content .logo_area img{
       height: auto;
@@ -93,12 +97,12 @@ body{
   }
   .content {
       top: 50%;
- 
+      margin-top: 50px;
+
   }
 
   .content h1{
       font-size: 40px;
-
   }
 
   .content form .row {
@@ -162,6 +166,27 @@ body{
   width: 100%; /* for mobile and smaller screens */
   margin: 0 auto;
 }
+.contact_deatils1{
+    margin-top: 50px;
+  font-weight: 600;
+  font-size: 18px;
+
+
+}
+
+.contact_deatils1 .teamsconditionpart{
+    color: white;
+}
+.contact_deatils1 .privacypolicy{
+    color: white;
+}
+.contact_deatils1 .teamsconditionpart:hover{
+    color: black;
+}
+.contact_deatils1 .privacypolicy:hover{
+    color: black;
+}
+
 @media (min-width: 768px) {
   .content form {
     /* for desktop and large devices (768 pixels & up) */
@@ -221,9 +246,10 @@ body{
 
 
 .contact_deatils1 .onboarding{
-  margin-top: 120px;
+  /* margin-top: 120px; */
   font-weight: 700;
   font-size: 22px;
+  margin-top: 90px;
 }
 
 
@@ -265,7 +291,54 @@ body{
     float: none;
     display: block;
   }
+
+    /* .logopart .logoimg{
+        margin-top: 50px;
+    } */
+    .content .logo_area {
+        /* height: auto;
+        left: 0;
+        margin-left: 0;
+        position: relative;
+        width: 130px; */
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .banner-area{
+      height: 850px;
+    }
+
+    /* .content .logo_area{
+    margin-top: 50px;
+
+    } */
+    .content .logo_area img{
+        height: auto;
+        width: 100%;
+
+    }
+    .content {
+        top: 50%;
+        margin-top: 120px;
+
+    }
+
 }
 
+.termsheading{
+    font-size: 35px;
+    color: white;
+}
+p{
+    color: white;
+}
+
+h1{
+    color: white;
+
+}
+h2{
+    color: white;
+}
 
 
